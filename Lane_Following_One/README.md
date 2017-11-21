@@ -1,5 +1,5 @@
 
-Procedimentos
+# Procedimentos
 
 Primeiramente no codigo foram definitas todas as portas do arduino as quais seriam usadas, sendo as portas pwn utilizadas para as ligações com o driver de ponte H utilizado para realizar os movimentos dos motores ligados as duas rodas do carro didático. As ligações entre o arduino e o driver podem ser vista na figura abaixo:
 
@@ -12,7 +12,7 @@ A partir de testes foram encontrados valores ideais para as contantes kp, ki e k
 
 As funções de movimento são definidas a partir do entendimento do driver de ponte H utilizado. Sendo cada uma dessas funções relacionadas ao movimento realizado pelos motores.
 
-Sensor de Linha
+# Sensor de Linha
 
 O sensor de linha possui 3 portas distintas uma para as posições esquerda(L), centro(C) e direita(R), sendo elas associadas a um sensor que detecta a presença da linha e manda a informação caso a linha seja encontrada.
 
@@ -22,7 +22,7 @@ Figura 4 – Sensor de Linha utilizado.
 
 No caso deste projeto as portas L, C e R foram associadas as portas 12, 2 e 4 respectivamente do arduino, como pode ser visto no programa.
 
-Uso do Controlador PID
+# Uso do Controlador PID
 
 O uso do controlador PID se resumiu ao cálculo inserido no programa, o cálculo em questão é o V = (300* l + 200 * c + 100 * r)/(l+c+r), onde as variáveis l, r e c são as referidas do sensor de linha como abordato acima. As possibilidades de resultado de cada variável é HIGH ou LOW, resultando em um valor diferenciado para o V dependendo de qual sensor estiver ligado no momento do cálculo. O V então é diminuido de um SetPoint, este definido 200 a partir de testes, para então encontrar um erro.
 
