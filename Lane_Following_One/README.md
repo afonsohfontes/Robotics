@@ -28,6 +28,7 @@ O uso do controlador PID se resumiu ao cálculo inserido no programa, o cálculo
 
 O erro é utilizado para o cálculo das três variáveis do controlador PID, sendo elas P, I e D. Onde nesses cálculos então inseridos as constantes kp, ki e kd para o P, I e D respectivamente.
 
+
 as fórmulas de cada variável são:
 
 P = erro * kp
