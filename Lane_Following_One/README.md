@@ -3,7 +3,8 @@ Procedimentos
 
 Primeiramente no codigo foram definitas todas as portas do arduino as quais seriam usadas, sendo as portas pwn utilizadas para as ligações com o driver de ponte H utilizado para realizar os movimentos dos motores ligados as duas rodas do carro didático. As ligações entre o arduino e o driver podem ser vista na figura abaixo:
 
-dazzling waasa-gaaris
+![image](https://user-images.githubusercontent.com/31252029/33086506-87ca34f0-cec6-11e7-8afc-34b9e8a2e0f5.png)
+
 
 Figura 3 – Ligações do Arduino com o Driver ponte H.
 
