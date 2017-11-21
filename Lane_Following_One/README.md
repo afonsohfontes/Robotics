@@ -16,7 +16,7 @@ Sensor de Linha
 
 O sensor de linha possui 3 portas distintas uma para as posições esquerda(L), centro(C) e direita(R), sendo elas associadas a um sensor que detecta a presença da linha e manda a informação caso a linha seja encontrada.
 
-sku_204012_3
+![image](https://user-images.githubusercontent.com/31252029/33086571-b46ebe0e-cec6-11e7-804a-1466cef5c574.png)
 
 Figura 4 – Sensor de Linha utilizado.
 
