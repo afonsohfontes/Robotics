@@ -136,6 +136,8 @@ void definirErro(double setpoint){
 
 ```
 
+O calculo do input foi encontrado com discussões em sala e testes para melhor apropriar a movimentação do carrinho durante a movimentação na pista, os valores que multiplicam as variaveis de leitura são pesos associados defido a importância de cada acionamento durante a corrida.
+
 A função leitura é onde são realizadas as leituras das informações dos sensores, estas são armazenadas nas variaveis.
 
 ```
