@@ -36,7 +36,7 @@ double ultimaLeitura;
 int x,y;
 int constante = 150;
 ```
-As variáveis de leitura irão guardar a informação referente a visualização da linha pelos sensores. As variaveis seguintes são utilizadas nos calculos refenrentes ao controlador do robo que resultara na definição da ação que este irá realizar. Por último as variáveis x e y que são as referentes a velocidade dos motores e a constante que é utilizada para definir um padrão de velocidade nas ações exercidas pelo carrinho.
+As variáveis de leitura irão guardar a informação referente a visualização da linha pelos sensores. As variaveis seguintes são utilizadas nos calculos referentes ao controlador do robo que resultara na definição da ação que este irá realizar. Por último as variáveis x e y que são as referentes a velocidade dos motores e a constante que é utilizada para definir um padrão de velocidade nas ações exercidas pelo carrinho.
 
 Estas são as ações que o carrinho pode realizar, recebendo como variáveis os valores de x e y que referem a velocidade do motor de cada roda.
 
@@ -72,7 +72,7 @@ void direita(int velocidadeMotor1, int velocidadeMotor2){
 
 ```
 
-As compinações de HIGH e LOW para cada tipo de ação são utilizadas com base na referências da ponte H utilizada no drive do motor, cada sequencia utilizada resulta na ação realizada.
+As combinações de HIGH e LOW para cada tipo de ação são utilizadas com base na referências da ponte H utilizada no drive do motor, cada sequência utilizada resulta na ação realizada.
 
 É realizada uma limitação nos valores de x e y
 
