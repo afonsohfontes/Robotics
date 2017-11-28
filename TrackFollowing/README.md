@@ -1,6 +1,10 @@
 ![unifor_logo](https://user-images.githubusercontent.com/32148244/30723505-3ff3405a-9f0e-11e7-81fc-152139920f83.jpg)
 
-# Integrantes
+# Resumo
+
+Este é um relatório da disciplina de Robótica do curso de graduação de Engenharia de Controle e Automação da Universidade de Fortaleza. Este consiste em elaborar um carro autonomo seguidor de pista, no qual irá participar da Feira do Conhecimento em uma competição estilo corrida. Para controle deste carro é foi utilizado o uso de controle PID (Proporcional, Integral, Derivativo).
+
+# Contribuidores
 
 Jefferson Acioly
 
@@ -9,10 +13,6 @@ Jorge Renan
 André Tavares
 
 William Rodrigues
-
-# Resumo
-
-Este é um relatório da disciplina de Robótica do curso de graduação de Engenharia de Controle e Automação da Universidade de Fortaleza. Este consiste em elaborar um carro autonomo seguidor de pista, no qual irá participar da Feira do Conhecimento em uma competição estilo corrida. Para controle deste carro é foi utilizado o uso de controle PID (Proporcional, Integral, Derivativo).
 
 # Materiais e equipamentos necessários:
 
@@ -236,6 +236,3 @@ Segue imagens do robô concluído.
 ![image](https://user-images.githubusercontent.com/32148244/33348972-fe2960de-d476-11e7-9587-e7075e5023f4.png)
 
 ![image](https://user-images.githubusercontent.com/32148244/33348991-0fbbdce6-d477-11e7-96c8-4c1e0c239602.png)
-
-![image](https://user-images.githubusercontent.com/32148244/33349010-23f888e4-d477-11e7-9096-6a8fcf3a6582.png)
-
