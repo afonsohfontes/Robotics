@@ -1,6 +1,6 @@
 # Robotica
-Seguidor de trilha utilizando Arduino
-
+Seguidor de trilha utilizando Arduino.
+<br><p align="center"><img src="https://i.imgflip.com/205qez.gif"><br/><b>Figura do Carro</b></p>
 # Colaboradores : 
 
   -<a href="https://github.com/rodrigopaullo">Rodrigo Paulo 1121227/1</a><br />
