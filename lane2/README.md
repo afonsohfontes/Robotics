@@ -5,6 +5,8 @@ Seguidor de trilha utilizando Arduino
 
   -<a href="https://github.com/rodrigopaullo">Rodrigo Paulo 1121227/1</a><br />
   -<a href="https://github.com/faidertms">Thiago Sales 1410702/9</a><br />
+  -<a href="https://github.com/wallace-miranda">Wallace 1221120/1</a><br />
+  -<a href="https://github.com/Josiran1">Josiran 1010893/4</a><br />
 
 # 1. Introdução
   <p align="justify">
