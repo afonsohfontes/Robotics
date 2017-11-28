@@ -5,7 +5,7 @@ O objetivo deste trabalho é  mostrar a aplicação de conhecimentos adquiridos 
 
 # Contribuidores
 
-Jefferson Accioly
+Jefferson Acioly
 
 Jorge Renan
 
