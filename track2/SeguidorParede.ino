@@ -81,11 +81,11 @@ void parar(){
 }
 
 
-// Como precisamos definir qual função deve ser chamada para continuar na rota a partir do valor de X e Y foi criado a função controle() ,
+/* Como precisamos definir qual função deve ser chamada para continuar na rota a partir do valor de X e Y foi criado a função controle() ,
 nela é chamado uma função para definir uma rotação máxima dos motores(velocidade), após isso é criado três condições que vai definir a função
 de direção , a primeira é caso X e Y sejam iguais ou maiores que zero, será chamado a função de frente , caso o X seja maior que zero e Y menor 
 que zero será chamado a função que movimenta o carro pra esquerda, a última e quando X é menor que zero e Y maior que zero , o carro irá na direção da direita.
-
+*/
 
 void limiteXY(){
   if(x >= 200){
@@ -105,22 +105,19 @@ void limiteXY(){
 void control(){
   limiteXY();
   if(x >= 0 && y>= 0){
-    frente(x,y); 
-    //Serial.println("frente");  
+    frente(x,y);  
   }else if (x < 0 && y> 0){
-    //Serial.println("direita"); 
     direita(-x,y);
   }else if(x > 0 && y< 0){
-    //Serial.println("esquerda"); 
     esquerda(x,-y);
   }
 }
 
 
-//A função definirErro(int setPoint) calcula o erro através da diferença entre o setPoint e o input que utiliza
+/*A função definirErro(int setPoint) calcula o erro através da diferença entre o setPoint e o input que utiliza
 os dados do sensores infravermelho do carro, caso o sensor da esquerda ou direita encoste na linha, o controlador irá calcular esse erro e estabelecer 
 um valor para x e y para que o carro permaneça sempre na pista.
-
+*/
 
 int amostra = 1000; //1 sec
 void definirErro(double setpoint){
@@ -152,10 +149,11 @@ double errSum2, ultimoErro2, kp2, ki2, kd2;
 double ultimaLeitura2;
 
 
-//A função definirErro3(int setPoint) calcula o erro através da diferença entre o setPoint e o input que utiliza
+/*A função definirErro3(int setPoint) calcula o erro através da diferença entre o setPoint e o input que utiliza
 os dados do sensores infravermelho do carro, caso o sensor da esquerda ou direita encoste na linha, o controlador irá calcular esse erro e estabelecer 
 um valor para x e y para que o carro permaneça sempre na pista.
-
+*/
+// UTILIZADO NA FEIRA DO CONHECIMENTO , SÂO 2 PID UM PARA SENSORES MAIS LONGOS E OUTRO PARA SENSORES CENTRAIS ESTE O MAIS FORTE
 void definirErro3(double setpoint){
   definirTempo();
   if(dT>=amostra){
@@ -168,7 +166,6 @@ void definirErro3(double setpoint){
       }
       errSum += (erro);//* dT);
       dInput = (input - ultimaLeitura );//- ultimoErro) / dT;
-      //Serial.println();
       x = constante + (kp * erro + ki * errSum - kd * dInput);
       y = constante - (kp * erro + ki * errSum -   kd * dInput);
       ultimoErro = erro;
@@ -197,12 +194,11 @@ void definirErro3(double setpoint){
 }
 
 
-//A função definirErro2(int setPoint) calcula o erro através da diferença entre o setPoint e o input que utiliza
+/*A função definirErro2(int setPoint) calcula o erro através da diferença entre o setPoint e o input que utiliza
 os dados do sensores infravermelho do carro, caso o sensor da esquerda ou direita encoste na linha, o controlador irá calcular esse erro e estabelecer 
 um valor para x e y para que o carro permaneça sempre na pista.
-
+*/
 int amostra2=1000;
-
 void definirErro2(double setpoint){
   if(dT>=amostra2 && (leituraCentroEsquerda || leituraCentroDireita)){
     input = (-350*leituraCentroEsquerda + 350*leituraCentroDireita);
@@ -260,10 +256,10 @@ void definirTempo(){
   dT += (double)(tempoFinal - tempo);
 }
 
-//Na função setup() são configurados os pinos utilizados na placa Arduino, essa configuração serve para determinar o funcionamento de cada um deles,
+/*Na função setup() são configurados os pinos utilizados na placa Arduino, essa configuração serve para determinar o funcionamento de cada um deles,
 como por exemplo os pinos da ponte H que estão configurados para saída, enquanto que, sensores infravermelho estão funcionando como entrada. Logo em seguida 
 são determinados os valores da saída dos pinos da ponte H que irão controlar a velocidade e o sentido da rotação de cada um dos motores, nesse momento estão tudo 
-em low para evitar qualquer problema futuro.
+em low para evitar qualquer problema futuro.*/
 
 void setup() {
  pinMode(ENA,OUTPUT);
@@ -288,12 +284,9 @@ void setup() {
  setAmostra(30);
  setTunings(3.5, 0.8, 0);
  setTunings2(1.8, 0.3, 0);
-// setAmostra2(30);
- 
- 
- //Serial.begin(9600);
-}
 
+}
+// chamada de funçoes para execução do PID e controle do carro
 void loop() {
   leitura();
   definirErro3(0);
