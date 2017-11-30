@@ -286,6 +286,19 @@ As linhas que o carrinho irá seguir nem sempre serão lineares, em algum moment
 
 ```
 
+# RESULTADOS
+![p_20170919_204636](https://user-images.githubusercontent.com/32148244/30933070-ce455dbc-a39f-11e7-9a3f-11a366e967d3.jpg)
+
+![p_20170919_204646](https://user-images.githubusercontent.com/32148244/30933071-ce4b0488-a39f-11e7-9ea5-f43e4a5ad919.jpg)
+
+O carro foi construido e testado em três pistas com formatos diferentes(Pista em U, Pista em W e Pista em H). Realizado os teste percebeu-se que o carro tinha dificuldades para fazer curvas fechadas apresentadas na Pista em H. Após os ajustes necessários foi possível concluir que para uma melhor estabilidade do carro seguidor de linha teve a necessidade do uso do controlador PID que contém as três funções e percebemos também que dependendo das constantes pode-se melhorar ou piorar a estabilidade do sistema. 
+
+Segue link dos vídeos da realização do teste final:
+
+https://youtu.be/NQxjA7YswCo
+
+https://youtu.be/DsVc7cPSmqg
+
 
 
 
