@@ -287,6 +287,8 @@ As linhas que o carrinho irá seguir nem sempre serão lineares, em algum moment
 ```
 
 # RESULTADOS
+O carro foi construido e testado em três pistas com formatos diferentes(Pista em U, Pista em W e Pista em H).
+
 ![p_20170919_204636](https://user-images.githubusercontent.com/32148244/30933070-ce455dbc-a39f-11e7-9a3f-11a366e967d3.jpg)
 
 ![p_20170919_204646](https://user-images.githubusercontent.com/32148244/30933071-ce4b0488-a39f-11e7-9ea5-f43e4a5ad919.jpg)
