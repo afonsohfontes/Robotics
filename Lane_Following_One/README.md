@@ -164,7 +164,7 @@ void Frente(int a, int b){
   digitalWrite(IN3, 1);
   digitalWrite(IN4, 0);
 
-  analogWrite(ENA, a);
+  analogWrite(ENA, a);           //Ação que possibilita o uso do PWM
   analogWrite(ENB, b);
 }
 
@@ -207,10 +207,10 @@ OBS: Haverá situações onde será necessário a utilização de ganhos nas vel
 O bloco de programação Loop, é onde os dados recebidos e os comandos de resposta serão processados (ou filtrados) para que assim ocorra a movimentação do protótipo. Lá se encontra as variáveis de tempo que serão usadas posteriormente no cálculo do PID. Também será preciso colocar uma lógica de inversão das entradas do sensor para que seja possível o cálculo da resultante deles. Essa inversão dos valores ajudará na determinação do valor cálculado pela equação caracteristica usada pelo sistema.
 ```
 void loop() {
-  ta = t;
-  t = millis();
+  ta = t;                       //Tempo anterior recebe o tempo atual
+  t = millis();                 //Tempo atual recebe o tempo de uma execução do ciclo do loop em milisegundo
   dt = t - ta;
-  int r = digitalRead(L); //Recebi as leituras do sensor infravermelho
+  int r = digitalRead(L);       //Recebe as leituras do sensor infravermelho
   int c = digitalRead(C);
   int l = digitalRead(R);
    
